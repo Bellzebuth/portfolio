@@ -18,7 +18,7 @@ function Footer() {
         onClick={() => scrollToTop()}
         className="absolute right-5 text-zinc-600 self-center mt-2 md:mt-0 dark:text-zinc-300 text-sm font-light flex gap-2 md:self-end"
       >
-        <FaArrowCircleUp className="self-center text-red-800 dark:text-red-500" />
+        <FaArrowCircleUp className="self-center text-pink-800 dark:text-pink-500" />
         Go back to top
       </button>
     </footer>

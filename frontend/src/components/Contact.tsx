@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
     emailjs.send('service_x354cd8', 'template_z95l70k', formData).then(
       () => {
         alert('Email sent successfully!')
-        setFormData({ name: '', email: '', message: '' }) // Réinitialiser le formulaire
+        setFormData({ name: '', email: '', message: '' })
       },
       (err) => {
         console.error('Error sending email:', err)
@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
             id="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] px-2 py-1 focus:border-red-500 focus:ring-red-500"
+            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
             required
           />
         </div>
@@ -80,7 +80,7 @@ const ContactForm: React.FC = () => {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] px-2 py-1 focus:border-red-500 focus:ring-red-500"
+            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
             required
           />
         </div>
@@ -97,13 +97,13 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] ring-white px-2 py-1 focus:border-red-500 focus:ring-red-500"
+            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] ring-white px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full py-2 px-4 bg-red-600 text-white rounded-md hover:bg-red-700"
+          className="w-full py-2 px-4 bg-pink-600 text-white rounded-md hover:bg-pink-700"
         >
           Send
         </button>
@@ -116,7 +116,7 @@ const ContactForm: React.FC = () => {
             href={user_info.socials.linkedin}
             className="flex gap-4 text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 hover:text-zinc-700 transition-all duration-300"
           >
-            <FaLinkedin className="self-center text-lg text-red-800 dark:text-red-500" />
+            <FaLinkedin className="self-center text-lg text-pink-800 dark:text-pink-500" />
             <span className="self-center">Follow on Linkedin</span>
           </a>
         </div>
@@ -126,7 +126,7 @@ const ContactForm: React.FC = () => {
             href={`mailto:${user_info.main.email}`}
             className="flex text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 gap-4 hover:text-zinc-700 transition-all duration-30"
           >
-            <MdEmail className="self-center text-lg text-red-800 dark:text-red-500" />
+            <MdEmail className="self-center text-lg text-pink-800 dark:text-pink-500" />
             <span>{user_info.main.email}</span>
           </a>
         </div>
@@ -136,7 +136,7 @@ const ContactForm: React.FC = () => {
             href={`tel:${user_info.main.phone}`}
             className="flex text-zinc-600 dark:text-zinc-300 hover:dark:text-zinc-300 gap-4 hover:text-zinc-700 transition-all duration-30"
           >
-            <MdPhone className="self-center text-lg text-red-800 dark:text-red-500" />
+            <MdPhone className="self-center text-lg text-pink-800 dark:text-pink-500" />
             <span>{user_info.main.phone}</span>
           </a>
         </div>

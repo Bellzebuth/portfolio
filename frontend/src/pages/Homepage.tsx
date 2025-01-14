@@ -20,7 +20,7 @@ function Homepage() {
   }, [location.pathname])
 
   return (
-    <div className="bg-zinc-100 dark:bg-black">
+    <div className="bg-zinc-100 dark:bg-dark-blue-hover">
       <div className="xl:w-[1200px] md:mx-auto h-full border-x border-zinc-100 dark:border-dark-blue bg-white dark:bg-dark-blue">
         <ToggleTheme switchTheme={switchTheme} />
 
