@@ -1,34 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Homepage from './pages/Homepage'
+import NotFound from './pages/NotFound'
+import { useEffect, useState } from 'react'
+import { createContext } from 'react'
+
+import './index.css'
+import 'preline/preline'
+import { IStaticMethods } from 'preline/preline'
+declare global {
+  interface Window {
+    HSStaticMethods: IStaticMethods
+  }
+}
+
+export const AppContext = createContext({
+  theme: 'dark',
+  switchTheme: () => {},
+})
 
 function App() {
-  const [count, setCount] = useState(0)
+  const savedTheme = localStorage.getItem('theme')
+  const [theme, setTheme] = useState(savedTheme || 'dark')
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark')
+
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const switchTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <AppContext.Provider value={{ theme, switchTheme }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </AppContext.Provider>
   )
 }
 
