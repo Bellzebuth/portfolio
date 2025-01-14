@@ -14,7 +14,7 @@ function Project({
   github: string
 }) {
   return (
-    <div className="hover:bg-zinc-100 hover:dark:bg-dark-blue-hover transition-all duration-300 p-6 md:rounded-xl">
+    <div className="hover:bg-zinc-100 hover:dark:bg-purple-hover transition-all duration-300 p-6 md:rounded-xl">
       <div className="flex gap-2 overflow-x-scroll py-2">
         {technologies.split(',').map((tech, index) => (
           <span
