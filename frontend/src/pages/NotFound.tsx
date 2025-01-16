@@ -20,7 +20,7 @@ function NotFound() {
             <div className="text-center mt-6">
               <button
                 onClick={() => navigate('/')}
-                className="bg-pink-800 hover:bg-pink-700 text-white px-6 py-4 rounded-xl"
+                className="bg-blue-800 hover:bg-blue-700 text-white px-6 py-4 rounded-xl"
               >
                 Go back to homepage
               </button>

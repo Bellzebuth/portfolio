@@ -11,7 +11,7 @@ function EducationAndExperience() {
     >
       <div className="w-full md:w-[80%]">
         <h4 className="text-xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-          <FaLandmark className="text-xl text-pink-800 dark:text-pink-500" />
+          <FaLandmark className="text-xl text-blue-800 dark:text-blue-500" />
           Education
         </h4>
 
@@ -52,7 +52,7 @@ function EducationAndExperience() {
         })}
 
         {/* <h4 className="text-xl dark:text-white mt-6 font-bold flex gap-2 items-center">
-          <PiCertificateFill className="text-2xl text-pink-800 dark:text-pink-500" />
+          <PiCertificateFill className="text-2xl text-blue-800 dark:text-blue-500" />
           Certificates
         </h4>
 
@@ -71,7 +71,7 @@ function EducationAndExperience() {
                           href={cert.link}
                           target="_blank"
                           rel="noreferrer"
-                          className="hs-tooltip-toggle text-center text-gray-800 dark:text-white hover:text-pink-800 hover:dark:text-pink-500"
+                          className="hs-tooltip-toggle text-center text-gray-800 dark:text-white hover:text-blue-800 hover:dark:text-blue-500"
                         >
                           <p className=" transition duration-700 px-6 font-bold">
                             {cert.title}
@@ -143,7 +143,7 @@ function EducationAndExperience() {
             {user_info.certificates.map((cert, index) => {
               return (
                 <span
-                  className="hs-carousel-active:bg-pink-700 hs-carousel-active:border-pink-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-pink-500 dark:hs-carousel-active:border-pink-500"
+                  className="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"
                   key={index}
                 ></span>
               )
@@ -154,7 +154,7 @@ function EducationAndExperience() {
 
       <div className="w-full">
         <h4 className="text-xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-          <FaBuildingUser className="text-2xl text-pink-800 dark:text-pink-500" />
+          <FaBuildingUser className="text-2xl text-blue-800 dark:text-blue-500" />
           Experience
         </h4>
 
@@ -195,7 +195,7 @@ function EducationAndExperience() {
                         return (
                           <li className="flex space-x-3" key={index}>
                             <svg
-                              className="flex-shrink-0 size-4 mt-0.5 text-pink-800 dark:text-pink-500"
+                              className="flex-shrink-0 size-4 mt-0.5 text-blue-800 dark:text-blue-500"
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
                               height="24"
