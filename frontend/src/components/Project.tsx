@@ -33,13 +33,15 @@ function Project({
       </p>
 
       <div className="flex gap-6 text-zinc-600 dark:text-zinc-300 font-medium">
-        <a
-          href={link}
-          className="flex gap-2 mt-4 hover:text-pink-800 hover:dark:text-pink-500 cursor-pointer transition-all duration-300"
-        >
-          <CiLink className="text-2xl self-center" />
-          <span className="text-xs self-center">View Project</span>
-        </a>
+        {link && (
+          <a
+            href={link}
+            className="flex gap-2 mt-4 hover:text-pink-800 hover:dark:text-pink-500 cursor-pointer transition-all duration-300"
+          >
+            <CiLink className="text-2xl self-center" />
+            <span className="text-xs self-center">View Project</span>
+          </a>
+        )}
         <a
           href={github}
           className="flex gap-2 mt-4 hover:text-pink-800 hover:dark:text-pink-500 cursor-pointer transition-all duration-300"

@@ -12,6 +12,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
+    "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
     "postcss": "^8.4.49",
     "preline": "^2.7.0",

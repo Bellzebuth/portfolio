@@ -10,7 +10,6 @@ function ToggleTheme({ switchTheme }: { switchTheme: () => void }) {
           aria-label="Dark Mode Button"
         >
           <CgDarkMode />
-
           <span
             className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-white border dark:border-zinc-800 dark:bg-zinc-950 text-xs font-medium dark:text-white rounded shadow-sm"
             role="tooltip"

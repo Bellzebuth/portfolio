@@ -1,7 +1,7 @@
 import user_info from '../data/user_info'
 import { FaLandmark } from 'react-icons/fa'
 import { FaBuildingUser } from 'react-icons/fa6'
-import { PiCertificateFill } from 'react-icons/pi'
+// import { PiCertificateFill } from 'react-icons/pi'
 
 function EducationAndExperience() {
   return (
@@ -51,7 +51,7 @@ function EducationAndExperience() {
           )
         })}
 
-        <h4 className="text-xl dark:text-white mt-6 font-bold flex gap-2 items-center">
+        {/* <h4 className="text-xl dark:text-white mt-6 font-bold flex gap-2 items-center">
           <PiCertificateFill className="text-2xl text-pink-800 dark:text-pink-500" />
           Certificates
         </h4>
@@ -149,7 +149,7 @@ function EducationAndExperience() {
               )
             })}
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="w-full">
@@ -158,7 +158,7 @@ function EducationAndExperience() {
           Experience
         </h4>
 
-        <div className="md:h-[610px] md:overflow-y-scroll scroll-smooth">
+        <div className=" md:overflow-y-scroll scroll-smooth">
           {user_info.experience.map((exp, index) => {
             return (
               <div key={index}>

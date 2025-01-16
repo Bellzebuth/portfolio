@@ -32,20 +32,27 @@ const ContactForm: React.FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    emailjs.send('service_x354cd8', 'template_z95l70k', formData).then(
-      () => {
-        alert('Email sent successfully!')
-        setFormData({ name: '', email: '', message: '' })
-      },
-      (err) => {
-        console.error('Error sending email:', err)
-        alert('Failed to send the email. Please try again later.')
-      }
-    )
+    emailjs
+      .send(
+        'service_x354cd8',
+        'template_z95l70k',
+        formData,
+        'iphHHwrr-BTsI4POq'
+      )
+      .then(
+        () => {
+          alert('Email sent successfully!')
+          setFormData({ name: '', email: '', message: '' })
+        },
+        (err) => {
+          console.error('Error sending email:', err)
+          alert('Failed to send the email. Please try again later.')
+        }
+      )
   }
 
   return (
-    <section id="contact" className="mt-16 pt-12 px-6 lg:px-24">
+    <section id="contact" className="mt-8 md:mt-16 pt-6 md:pt-12 px-6 lg:px-24">
       <h4 className="text-5xl text-center font-bold text-zinc-900 dark:text-zinc-100">
         Contact
       </h4>
@@ -53,7 +60,7 @@ const ContactForm: React.FC = () => {
         <div className="mb-4">
           <label
             htmlFor="name or company"
-            className="block text-md font-medium text-white"
+            className="block text-md font-medium text-black dark:text-white"
           >
             Name or company name
           </label>
@@ -63,14 +70,14 @@ const ContactForm: React.FC = () => {
             id="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
+            className="mt-1 block w-full bg-transparent text-black dark:text-white rounded-md border-pink-500 dark:border-white border-[1px] px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
             required
           />
         </div>
         <div className="mb-4">
           <label
             htmlFor="email"
-            className="block text-md font-medium text-white"
+            className="block text-md font-medium text-black dark:text-white"
           >
             Email
           </label>
@@ -80,14 +87,14 @@ const ContactForm: React.FC = () => {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
+            className="mt-1 block w-full bg-transparent text-black dark:text-white rounded-md border-pink-500 dark:border-white border-[1px] px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
             required
           />
         </div>
         <div className="mb-4">
           <label
             htmlFor="message"
-            className="block text-md font-medium text-white"
+            className="block text-md font-medium text-black dark:text-white"
           >
             Message
           </label>
@@ -97,7 +104,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="mt-1 block w-full bg-transparent text-white rounded-md border-white border-[1px] ring-white px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
+            className="mt-1 block w-full bg-transparent text-black dark:text-white rounded-md border-pink-500 dark:border-white border-[1px] ring-white px-2 py-1 focus:border-pink-500 focus:ring-pink-500"
             required
           />
         </div>

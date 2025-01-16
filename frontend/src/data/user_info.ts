@@ -19,58 +19,41 @@ const info = {
   // ============ PROJECTS ============
   projects: [
     {
-      title: 'Pseudocode to C',
+      title: 'Quizz API',
       description:
-        'Pseudocode to C is a web app that translates pseudocode into C code, aiding in the transition from high-level logic to a lower-level language.',
-      technologies: 'React, Tailwind, Flask, SpaCy',
-      github: 'https://github.com/dsbalico/pseudocode-to-c',
-      link: 'https://pseudocode-to-c.netlify.app/',
+        'Very simple go API that send you a quizz and note your answers.',
+      technologies: 'Golang',
+      github: 'https://github.com/Bellzebuth/SuperSimpleQuizz',
     },
 
     {
-      title: 'YouShare',
+      title: 'Politica',
       description:
-        'Developed to learn full-stack web development using Nuxt3, Express, and PostgreSQL in fulfillment of my internship requirements.',
-      technologies: 'Nuxt, Tailwind, Express, PostgreSQL',
-      github: 'https://github.com/dsbalico/YouShare',
-      link: 'https://github.com/dsbalico/YouShare',
+        'Social network, inspired by Twitter or Facebook, to interact on political subject.',
+      technologies: 'Angular, Express, MongoDB',
+      github: 'https://github.com/Bellzebuth/politica',
     },
 
     {
-      title: 'Draw & Classify',
+      title: 'Movie selector',
       description:
-        'Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.',
-      technologies: 'React, Tailwind, Tensorflow',
-      github: 'https://github.com/dsbalico/letter-digit-shape-classification',
-      link: 'https://letterdigitshape-classification.netlify.app/',
+        'App to propose movies based on user preferences, like movie themes, favorite actors or directors.',
+      technologies: 'VueJS, Python, MongoDB',
+      github: 'https://github.com/Bellzebuth/movie_selector',
     },
 
     {
-      title: 'Chatroom',
-      description:
-        'Chatroom is a simple online chatting web application where you can create chat rooms and have a fun conversation with a group of people.',
-      technologies: 'React, Tailwind, Firebase',
-      github: 'https://github.com/dsbalico/chatroom',
-      link: 'https://thechatroom.netlify.app/',
+      title: 'Cookie seller',
+      description: 'online cookie sales site.',
+      technologies: 'Angular, Express, MongoDB',
+      github: 'https://github.com/Bellzebuth/cookie_seller',
     },
 
     {
-      title: 'Sudoku Solver',
-      description:
-        'Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.',
-      technologies: 'React, Tailwind, TypeScript',
-      github:
-        'https://github.com/dsbalico/sudoku-solver-using-simulated-annealing',
-      link: 'https://sudoku-solver-sa.netlify.app/',
-    },
-
-    {
-      title: 'Probability Pick',
-      description:
-        'Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.',
-      technologies: 'React, Tailwind, Flask',
-      github: 'https://github.com/dsbalico/pcso-lotto-number-generator',
-      link: 'https://probability-pick.netlify.app/',
+      title: '2D game',
+      description: 'Simple 2D game.',
+      technologies: 'C#',
+      github: 'https://github.com/Bellzebuth/cookie_seller',
     },
   ],
 
