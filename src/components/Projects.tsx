@@ -15,7 +15,7 @@ function Projects() {
             description={project.description}
             technologies={project.technologies}
             github={project.github}
-            link={project.link}
+            /*link={project.link} */
           />
         );
       })}

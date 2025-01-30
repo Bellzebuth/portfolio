@@ -1,4 +1,4 @@
-import { CiLink } from 'react-icons/ci'
+import { CiLink } from "react-icons/ci";
 
 function Project({
   title,
@@ -7,16 +7,16 @@ function Project({
   link,
   github,
 }: {
-  title: string
-  description: string
-  technologies: string
-  link: string
-  github: string
+  title: string;
+  description: string;
+  technologies: string;
+  link?: string;
+  github: string;
 }) {
   return (
     <div className="hover:bg-zinc-100 hover:dark:bg-zinc-800 transition-all duration-300 p-6 md:rounded-xl">
       <div className="flex gap-2 overflow-x-scroll py-2">
-        {technologies.split(',').map((tech, index) => (
+        {technologies.split(",").map((tech, index) => (
           <span
             className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500"
             key={index}
@@ -51,7 +51,7 @@ function Project({
         </a>
       </div>
     </div>
-  )
+  );
 }
 
-export default Project
+export default Project;
