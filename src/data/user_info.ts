@@ -22,7 +22,7 @@ const info = {
       title: "CryptoFolio",
       description:
         "Follow your crypto assets including purchased price, real-time price (connected to CoinGecko API).",
-      technologies: "Golang",
+      technologies: "Golang, React, SQLite, Tailwind",
       github: "https://github.com/Bellzebuth/go-crypto",
     },
     {
