@@ -43,3 +43,8 @@ amplify/backend/awscloudformation
 amplify/#current-cloud-backend
 amplify/team-provider-info.json
 
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
